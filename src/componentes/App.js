@@ -7,12 +7,14 @@ import ControlPresupuestos from "./ControlPresupuesto";
 import { validarPresupuesto } from "../helpers";
 
 class App extends Component {
+  constructor() {
+    super()
   state = {
     presupuesto: "",
     restante: "",
     gastos: {}
   };
-
+  }
   componentDidMount() {
     this.obtenerPresupuesto();
   }
